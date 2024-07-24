@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: hsl(185, 41%, 84%);
+}
+
+main {
+  width: 60rem;
+  height: 30rem;
+  margin: 20px;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  background: white;
+  border-radius: 1.5rem;
+  gap: 2rem;
+}
+
+.field {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  color: hsl(186, 14%, 43%);
+}
+
+.input-container {
+  display: flex;
+  height: 3rem;
+  padding: 0 1rem 0 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  background: hsl(189, 41%, 97%);
+}
+.input-container:focus-within {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.input-container .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1 1 1%;
+}
+.input-container input {
+  color: hsl(183, 100%, 15%);
+  background: none;
+  outline: 0;
+  border: 0;
+  text-align: right;
+  flex: 1 1 95%;
+  font-size: 1.5rem;
+}
+
+#form {
+  flex: 1 1 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#form #tip-percentage {
+  padding: 0.25rem 0 0.25rem 0;
+  height: fit-content;
+}
+#form #selection {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+#form #selection .tip-choice {
+  width: 5em;
+  flex-grow: 1;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  color: white;
+  background: hsl(183, 100%, 15%);
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+#form #selection #tip-custom {
+  background: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+}
+#form #selection #tip-custom input {
+  background: none;
+  outline: 0;
+  border: 0;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  width: 100%;
+}
+
+#results {
+  flex: 1 1 50%;
+  padding: 3rem;
+  box-sizing: border-box;
+  border-radius: 1em;
+  background: hsl(183, 100%, 15%);
+  color: white;
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+}
+#results .result {
+  display: flex;
+}
+#results .result label {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column;
+}
+#results .result .value {
+  text-align: right;
+  flex: 1 1 50%;
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%);
+}
+#results button {
+  margin-top: auto;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
