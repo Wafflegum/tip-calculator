@@ -49,7 +49,7 @@ function CalculateTip(percentage) {
     )
     if (tipPercentage > 0 && headcount > 0 && bill > 0) {
         tip = (bill * (percentage / 100)) / headcount
-        totalPerPerson = (bill + tip) / headcount
+        totalPerPerson = bill / headcount
 
         tip = tip.toFixed(2)
         totalPerPerson = parseFloat(totalPerPerson).toFixed(2)
